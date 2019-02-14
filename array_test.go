@@ -355,6 +355,8 @@ func TestArray_includes(t *testing.T) {
 
 		test(`['a', 'b', 'c', 'b'].includes('b', 'z')`, false)
 
+		test(`['a', 'b', 'c', 'b'].includes()`, false)
+
 		test(`
            Object.prototype.includes = Array.prototype.includes;
            var abc = {0: 'a', 1: 'b', 2: 'c', length: 3};
